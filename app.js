@@ -1,8 +1,8 @@
 const toggleList = document.querySelector('#toggleList');
 const listDiv = document.querySelector('.list');
-const input = document.querySelector('input.description');
-const p = document.querySelector('p.description');
-const button = document.querySelector('button.description');
+const descriptionInput = document.querySelector('input.description');
+const descriptionP = document.querySelector('p.description');
+const descriptionButton = document.querySelector('button.description');
 
 toggleList.addEventListener('click', () =>
 {
@@ -17,7 +17,7 @@ toggleList.addEventListener('click', () =>
     }
 });
 
-button.addEventListener('click', () =>
+descriptionButton.addEventListener('click', () =>
 {
-    p.innerHTML = input.value + ':';
+    descriptionP.innerHTML = descriptionInput.value + ':';
 });
